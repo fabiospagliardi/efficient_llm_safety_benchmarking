@@ -14,7 +14,7 @@ This repository applies **Item Response Theory (IRT)** — a psychometrics frame
 
 Two approaches are implemented:
 
-- **Adaptive (Fluid Benchmarking):** Dynamically selects items per model via Maximum Fisher Information (computerized adaptive testing). Reduces evaluation cost by ≥80% while maintaining Spearman's ρ ≥ 0.90 with the full benchmark, and by up to **99.9%** on AIR-Bench 2024.
+- **Adaptive (Fluid Benchmarking):** Dynamically selects items per model via Maximum Fisher Information (computerized adaptive testing). The adaptive engine is adapted to safety evaluation from [allenai/fluid-benchmarking](https://github.com/allenai/fluid-benchmarking) ([paper](https://arxiv.org/abs/2509.11106)). Reduces evaluation cost by ≥80% while maintaining Spearman's ρ ≥ 0.90 with the full benchmark, and by up to **99.9%** on AIR-Bench 2024.
 - **Static subset selection:** Extracts a fixed informative subset reusable across all models without per-model adaptation. Up to **99.8%** cost savings on AIR-Bench 2024; 80–92% across other benchmarks.
 
 **Evaluated on six safety benchmarks:** AIR-Bench 2024 · Anthropic Red Team · HarmBench · SafetyBench · SimpleSafety · WMDP (Bio)
