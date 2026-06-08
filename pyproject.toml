@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "efficient-llm-safety-benchmarking"
+version = "0.1.0"
+authors = [
+  {name = "Fabio Spagliardi", email = "spagliardi.fabio@gmail.com"},
+]
+description = "Efficient Safety Benchmarking via Item Response Theory"
+readme = "README.md"
+requires-python = "==3.11.*"
+
+dependencies = [
+    "python-dotenv",
+    "pre-commit>=3.2.1",
+    "black",
+    "isort", 
+    "flake8",
+    "jupyter",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "huggingface_hub",
+    "ipykernel",
+    "tabulate",
+    "tqdm",
+    "pytest",
+    "datasets",
+    "torch",
+    "transformers",
+    "accelerate",
+    "py-irt>=0.7.0",
+    "openai",
+    "python-dotenv",
+    "kmedoids",
+    "scikit-learn",
+    "pyfonts",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["data*", "irt-fit*", "fluid_benchmarking*", "static_subset*"]

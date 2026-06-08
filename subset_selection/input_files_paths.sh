@@ -1,0 +1,6 @@
+export helm_airbench2024="data/helm_airbench2024_irt_data.jsonl"
+export helm_antredteam="data/helm_antredteam_irt_data.jsonl"
+export helm_harmbench="data/helm_harmbench_irt_data.jsonl"
+export helm_simplesafety="data/helm_simplesafety_irt_data.jsonl"
+export safetybench="data/safetybench_irt_data.jsonl"
+export wmdp="data/wmdp_irt_data.jsonl"
